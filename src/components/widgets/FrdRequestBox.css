@@ -1,0 +1,75 @@
+.frdRequest {
+  display: flex;
+  gap: 8px;
+  padding: 8px 10px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.frdRequest:hover {
+  background-color: #e4e6e9;
+}
+
+.frdRequest__content {
+  flex: 1;
+}
+
+.frdRequest__content span {
+  display: block;
+}
+
+.frdRequest__content__name {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 15px;
+  margin-bottom: 2px;
+}
+
+.frdRequest__content__time {
+  color: gray;
+  font-size: 13px;
+  margin-bottom: 2px;
+}
+
+.frdRequest__content__mutualFrds__avatar {
+  width: 16px !important;
+  height: 16px !important;
+}
+
+.frdRequest__content__mutualFrds {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  font-size: 14px;
+  color: gray;
+  margin-top: 10px;
+  margin-bottom: 8px;
+}
+
+.frdRequest__content__buttons button {
+  padding: 9px 15px;
+  border-radius: 5px;
+  font-size: 15px;
+  border: none;
+  cursor: pointer;
+}
+
+.frdRequest__content__confirmBtn {
+  background-color: #1a6ed8;
+  color: white;
+}
+
+.frdRequest__content__confirmBtn:hover {
+  background-color: #2261af;
+}
+
+.frdRequest__content__deleteBtn {
+  background-color: #e4e6eb;
+  margin-left: 10px;
+}
+
+.frdRequest__content__deleteBtn:hover {
+  background-color: #c1c4cc;
+}

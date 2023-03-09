@@ -1,0 +1,21 @@
+.contacts__heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 7px;
+}
+
+.contacts__heading__text > span {
+  font-size: 17px;
+  font-weight: 600;
+  color: #65676b;
+}
+
+.contacts__heading__icons {
+  display: flex;
+  gap: 10px;
+}
+
+.contacts__heading__icons .MuiSvgIcon-root {
+  font-size: 22px;
+}

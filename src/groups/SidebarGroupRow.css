@@ -1,0 +1,41 @@
+.sidebarGroupRow {
+  display: flex;
+  align-items: center;
+  padding: 8px 5px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.sidebarGroupRow:hover {
+  background-color: #f0f2f5;
+}
+
+.sidebarGroupRow__pageProfile {
+  width: 48px !important;
+  height: 48px !important;
+}
+
+.sidebarGroupRow__details {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 10px;
+  width: 100%;
+}
+
+.sidebarGroupRow__details__content > h4 {
+  margin: 0 0 4px 0;
+  font-size: 15px;
+}
+
+.sidebarGroupRow__details__content > span {
+  font-size: 13px;
+  color: #65676b;
+}
+
+.sidebarGroupRow__details__icon {
+  color: #65676b;
+  background-color: #d8dadf;
+  border-radius: 30px;
+  margin-right: 5px;
+}

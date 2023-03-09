@@ -1,0 +1,42 @@
+.pagesRow {
+  padding: 6px;
+}
+
+.pagesRow__main {
+  display: flex;
+  align-items: center;
+  padding-left: 6px;
+  cursor: pointer;
+}
+
+.pagesRow__main > .pagesRow__avatar {
+  margin-right: 10px;
+}
+
+.pagesRow__main > h4 {
+  margin-left: 10px;
+  color: #050505;
+  margin: 10px 0;
+}
+
+.pagesRow__main:hover,
+.pagesRow__item:hover {
+  background-color: #e4e6e9;
+  border-radius: 10px;
+}
+
+.pagesRow__item {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 15px;
+  display: flex;
+  align-items: center;
+  color: #65676b;
+  cursor: pointer;
+}
+
+.pagesRow__item > span {
+  font-size: 13px;
+  font-weight: 600;
+  margin-left: 10px;
+}

@@ -1,0 +1,25 @@
+.sidebar {
+  padding: 25px 10px;
+  height: 100vh;
+  flex: 0.8;
+  overflow-y: scroll;
+  position: sticky;
+  top: 60.5px;
+  left: 0;
+}
+
+.sidebar::-webkit-scrollbar {
+  width: 8px;
+  height: 100%;
+}
+
+.sidebar::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: #bcc0ca;
+}
+
+@media screen and (max-width: 1250px) {
+  .sidebar {
+    display: none;
+  }
+}

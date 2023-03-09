@@ -1,0 +1,25 @@
+.contactRow {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: bold;
+  font-size: 15px;
+  padding-left: 7px;
+  border-radius: 10px;
+  margin-bottom: 5px;
+  cursor: pointer;
+}
+
+.contactRow:hover {
+  background-color: #e4e6e9;
+}
+
+.contactRow__avatar {
+  width: 28px !important;
+  height: 28px !important;
+}
+
+.MuiBadge-dot {
+  background-color: #31a24c;
+  border: 1px solid white;
+}

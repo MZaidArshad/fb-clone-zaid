@@ -1,0 +1,24 @@
+.VideoNotificationsTab {
+  background-color: white;
+  margin-top: 20px;
+  border-radius: 10px;
+}
+
+.VideoNotificationsTab > h3 {
+  font-size: 20px;
+  margin: 0;
+  padding: 20px 20px 0 20px;
+  font-weight: 700;
+}
+
+.VideoNotificationsTab__notifications {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+}
+
+@media screen and (max-width: 700px) {
+  .VideoNotificationsTab {
+    display: none;
+  }
+}

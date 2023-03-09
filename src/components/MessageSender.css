@@ -1,0 +1,113 @@
+.messageSender {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+  background-color: white;
+  width: 100%;
+  border: 15px;
+  border-radius: 10px;
+  box-shadow: 0px 5px 7px -7px rgba(0, 0, 0, 0.75);
+}
+
+.messageSender__top {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #eff2f5;
+  padding: 15px;
+}
+
+.messageSender__top > form {
+  display: flex;
+  flex: 1;
+}
+
+.messageSender__top > form > input {
+  outline-width: 0;
+  border: none;
+  padding: 10px 20px;
+  margin: 0 10px;
+  border-radius: 999px;
+  background-color: #eff2f5;
+  font-size: 16px;
+}
+
+.messageSender__input {
+  flex: 1;
+  justify-content: space-evenly;
+}
+
+.messageSender__top > form > button {
+  display: none;
+}
+
+.messageSender__bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.messageSender__option {
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  color: gray;
+  margin: 5px;
+  cursor: pointer;
+}
+
+.messageSender__option > h3 {
+  margin: 0 10px;
+  font-size: 16px;
+  word-wrap: nowrap;
+}
+
+.messageSender__option:hover {
+  background-color: #eff2f5;
+  border-radius: 20px;
+}
+
+.uploadFileContainer {
+  width: 40% !important;
+}
+
+.messageSender__option__uploadBtn::-webkit-file-upload-button {
+  visibility: hidden;
+}
+
+.messageSender__option__uploadBtn::before {
+  content: "Select Photo";
+  display: inline-block;
+  background: linear-gradient(to bottom, #f9f9f9, #e3e3e3);
+  border-radius: 3px;
+  padding: 5px 8px;
+  outline: none;
+  width: 20px;
+  cursor: pointer;
+  text-shadow: 1px 1px #fff;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+@media screen and (max-width: 760px) {
+  .messageSender__top > form {
+    display: block;
+  }
+
+  .messageSender__top > form input {
+    width: 85%;
+    margin: 5px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .messageSender__bottom {
+    width: 100%;
+  }
+  .messageSender__option {
+    padding: 0;
+  }
+
+  .messageSender__option > h3 {
+    font-size: 12px;
+  }
+}

@@ -1,23 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./App.css";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Home from "./Home";
+import Watch from "./watch/Watch";
+import MarketPlace from "./marketplace/MarketPlace";
+import Groups from "./groups/Groups";
+import Gaming from "./gaming/Gaming";
+import Login from "./Login";
+import { useStateValue } from "./StateProvider";
 
 function App() {
+  const [{ user }, dispatch] = useStateValue();
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app">
+      {!user ? (
+        <Login />
+      ) : (
+        <Router>
+          <Routes>
+            <Route path="/" element={<Home />}></Route>
+            <Route path="/watch" element={<Watch />}></Route>
+            <Route path="/marketplace" element={<MarketPlace />}></Route>
+            <Route path="/groups" element={<Groups />}></Route>
+            <Route path="/gaming" element={<Gaming />}></Route>
+          </Routes>
+        </Router>
+      )}
     </div>
   );
 }

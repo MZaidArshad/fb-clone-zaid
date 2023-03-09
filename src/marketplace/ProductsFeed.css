@@ -1,0 +1,48 @@
+.poductsFeed {
+  flex: 0.77;
+  padding: 10px 30px;
+  width: 100%;
+}
+
+.poductsFeed__heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.poductsFeed__heading > h3 {
+  font-size: 20px;
+}
+
+.poductsFeed__heading > span {
+  color: #1876f2;
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+}
+
+.poductsFeed__heading > span > .MuiSvgIcon-root {
+  width: 20px !important;
+  height: 20px !important;
+}
+
+.productsFeed__products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.productsFeed__products__loadingImg {
+  position: absolute;
+  object-fit: contain;
+  width: 50px;
+  top: 300px;
+}
+
+@media screen and (max-width: 1000px) {
+  .poductsFeed {
+    padding-left: 10px;
+    padding-right: 10px;
+    flex: 1;
+  }
+}

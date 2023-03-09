@@ -1,0 +1,29 @@
+.widgets {
+  padding: 8px 10px;
+  flex: 0.8;
+  height: 100vh;
+  overflow-y: scroll;
+  position: sticky;
+  right: 0;
+  top: 60.5px;
+  bottom: 150px;
+}
+
+.widgets::-webkit-scrollbar {
+  width: 8px;
+  height: 100%;
+}
+
+.widgets::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: #bcc0ca;
+}
+
+hr {
+  margin: 0;
+}
+@media screen and (max-width: 900px) {
+  .widgets {
+    display: none;
+  }
+}

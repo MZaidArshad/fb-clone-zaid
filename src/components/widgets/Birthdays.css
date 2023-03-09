@@ -1,0 +1,44 @@
+.birthday {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.birthday__heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 7px;
+  margin-bottom: 10px;
+}
+
+.birthday__heading__text > span {
+  font-size: 17px;
+  font-weight: 600;
+  color: #65676b;
+}
+
+.birthday__body {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  padding: 0 8px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.birthday__body:hover {
+  background-color: #e4e6e9;
+}
+
+.birthday__body__icon .MuiSvgIcon-root {
+  font-size: 30px;
+  background-color: #1a6ed8;
+  padding: 5px;
+  color: white;
+  border-radius: 10px;
+}
+
+.birthday__body__content {
+  font-size: 15px;
+  padding: 12px 0;
+}

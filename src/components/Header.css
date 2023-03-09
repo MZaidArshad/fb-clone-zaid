@@ -1,0 +1,253 @@
+.header {
+  display: flex;
+  padding: 0 20px;
+  justify-content: space-between;
+  position: sticky;
+  background-color: white;
+  z-index: 100;
+  top: 0;
+  box-shadow: 0px 5px 8px -9px rgba(0, 0, 0, 0.75);
+}
+.header__center__menuIcon {
+  display: none !important;
+}
+
+.header__left__logo {
+  display: flex;
+  align-items: center;
+}
+
+.header__left__logo > h3 {
+  color: #2e81f4;
+  font-size: 28px;
+  margin-left: 10px;
+  display: none;
+}
+
+.header__left {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.header__left img {
+  height: 40px;
+}
+
+.header__input {
+  display: flex;
+  align-items: center;
+  background-color: #eff2f5;
+  padding: 9px;
+  margin-left: 10px;
+  border-radius: 999px;
+}
+
+.header__input > .MuiSvgIcon-root {
+  color: grey;
+}
+
+.header__input > input {
+  border: none;
+  background-color: transparent;
+  outline-width: 0;
+  position: relative;
+}
+
+.header__main {
+  display: flex;
+  flex: 0.8;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__center {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__option > .MuiSvgIcon-root {
+  font-size: 30px;
+  color: grey;
+}
+
+.header__option:hover > .MuiSvgIcon-root {
+  color: #2e81f4;
+}
+
+.header__option {
+  display: flex;
+  align-items: center;
+  padding: 8px 35px;
+  cursor: pointer;
+  margin: 0 5px;
+}
+
+.header__option:hover {
+  background-color: #eff2f5;
+  border-radius: 10px;
+  align-items: center;
+  border-bottom: none;
+}
+
+.header__option--active {
+  border-bottom: 3px solid #2e81f4;
+}
+
+.header__option--active > .MuiSvgIcon-root {
+  color: #2e81f4;
+}
+
+.header__option--active:hover {
+  background-color: transparent;
+  border-bottom: 3px solid #2e81f4;
+  border-radius: 0;
+}
+
+.header__right {
+  padding: 8px 5px;
+}
+
+.header__info .MuiSvgIcon-root {
+  color: #050505;
+  background-color: #f0f2f5;
+  padding: 8px;
+  border-radius: 50px;
+  margin-left: 5px;
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+.header__info .MuiAvatar-root {
+  margin-left: 3px;
+  cursor: pointer;
+}
+
+.header__info .MuiBadge-badge {
+  background-color: #e41e3f;
+  color: white;
+}
+
+.header__info .MuiSvgIcon-root:hover {
+  color: #050505;
+  background-color: #e5e6e7;
+}
+
+.header__info {
+  display: flex;
+  align-items: center;
+}
+
+.header__info > h4 {
+  margin-left: 10px;
+}
+
+.header__right {
+  display: flex;
+}
+
+.header__right__options {
+  position: absolute;
+  right: 15px;
+  top: 59px;
+  width: 300px;
+  height: 100px;
+  padding: 5px 10px;
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: 0px 5px 8px -9px rgba(0, 0, 0, 0.75);
+  display: none;
+}
+
+.header__right__options__option {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  padding: 8px;
+  border-radius: 10px;
+}
+
+.header__right__options__option:hover {
+  background-color: #f2f2f2;
+}
+
+.header__right__options__option > h3 {
+  margin: 5px 0;
+}
+
+.header__right__options__option > .MuiSvgIcon-root {
+  margin-right: 8px;
+  padding: 5px;
+  border-radius: 90px;
+  background-color: #d8dadf;
+}
+
+.header__right__options__active {
+  display: block;
+}
+
+@media screen and (max-width: 1000px) {
+  .header__option {
+    padding: 8px 10px;
+  }
+
+  .header__input {
+    width: auto;
+  }
+
+  .header__center {
+    width: 100%;
+    justify-content: space-evenly !important;
+  }
+
+  .header__info .responsive__app {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .header {
+    display: block !important;
+    width: 100%;
+    padding: 0 5px;
+  }
+
+  .header__left__logo > h3 {
+    display: flex;
+    margin: 10px 10px;
+  }
+
+  .header__left {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .header__main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .header {
+    padding: 0 5px;
+  }
+
+  .header__main {
+    padding-left: 3px;
+    padding-right: 3px;
+  }
+
+  .header__option {
+    padding: 5px;
+  }
+
+  .header__info .MuiSvgIcon-root {
+    padding: 5px;
+    border-radius: 50px;
+  }
+}

@@ -1,0 +1,16 @@
+.pages__heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 7px;
+}
+
+.pages__heading__text > span {
+  font-size: 17px;
+  font-weight: 600;
+  color: #65676b;
+}
+
+.pages__heading__icons .MuiSvgIcon-root {
+  font-size: 22px;
+}

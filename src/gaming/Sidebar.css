@@ -1,0 +1,94 @@
+.game_sidebar {
+  height: 100vh;
+  flex: 0.34;
+  background-color: #ffff;
+  padding: 0 15px;
+  overflow-y: hidden;
+  box-shadow: 5px 0 7px -7px rgba(0, 0, 0, 0.6);
+  position: sticky;
+  top: 58px;
+  left: 0;
+  overflow-y: scroll;
+  position: sticky;
+}
+
+.game_sidebar__heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.game_sidebar__heading__settingBtn {
+  background-color: #f0f2f5 !important;
+}
+
+.game_sidebar__heading__settingBtn > .MuiSvgIcon-root {
+  color: #1c1d21;
+}
+
+.game_sidebar__heading__settingBtn:hover {
+  background-color: #e5e6e7 !important;
+}
+
+.game_sidebar__search {
+  display: flex;
+  align-items: center;
+  background-color: #eff2f5;
+  padding: 6px 8px;
+  margin-bottom: 15px;
+  border-radius: 999px;
+}
+
+.game_sidebar__search > .MuiSvgIcon-root {
+  color: gray;
+}
+
+.game_sidebar__search > input {
+  font-size: 15px;
+  border: none;
+  background-color: transparent;
+  outline-width: 0;
+}
+
+.game_sidebar__body__addListingBtn > p {
+  margin: 10px;
+}
+
+.game_sidebar__body__addListingBtn:hover {
+  background-color: #f0f2f5;
+}
+
+.game_sidebar__body__filters > h3 {
+  font-size: 17px;
+  margin: 10px 0;
+}
+
+.game_sidebar__body__filters > span {
+  font-size: 15px;
+  color: #1876f2;
+  font-weight: 700;
+  display: block;
+  padding: 5px 0;
+  border-radius: 7px;
+}
+
+.game_sidebar__body__filters > span:hover {
+  background-color: #f0f2f5;
+  cursor: pointer;
+}
+
+.game_sidebar::-webkit-scrollbar {
+  width: 8px;
+  height: 100%;
+}
+
+.game_sidebar::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: #bcc0ca;
+}
+
+@media screen and (max-width: 850px) {
+  .game_sidebar {
+    display: none;
+  }
+}

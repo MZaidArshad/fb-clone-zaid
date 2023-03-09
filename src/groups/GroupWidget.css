@@ -1,0 +1,76 @@
+.groupWidgets {
+  padding: 15px 20px;
+  height: 350px;
+  position: fixed;
+  right: 20px;
+  top: 70.5px;
+  bottom: 150px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+
+.groupWidgets__head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.groupWidgets__head h4 {
+  font-size: 17px;
+  margin: 0 0 5px 0;
+}
+.groupWidgets__head span {
+  font-size: 15px;
+  color: #65676b;
+  margin: 0;
+}
+
+.groupWidgets__head__seeMoreBtn {
+  text-transform: capitalize;
+}
+
+.groupWidgets__card {
+  border: 1px solid #e0e0e1;
+  border-radius: 10px;
+  margin-top: 15px;
+}
+
+.groupWidgets__card__img > img {
+  border-radius: 10px 10px 0 0;
+  width: 293px;
+  height: 165px;
+}
+
+.groupWidgets__card__content {
+  padding: 0 10px;
+}
+.groupWidgets__card__content__heading > h4 {
+  font-size: 17px;
+  margin: 5px 0;
+}
+
+.groupWidgets__card__content__heading > span {
+  font-size: 15px;
+  color: #65676b;
+}
+
+.groupWidgets__card__content__followBtn {
+  background-color: #1877f2;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 7px;
+  color: #ffffff;
+  font-size: 15px;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+@media screen and (max-width: 1200px) {
+  .groupWidgets {
+    display: none;
+  }
+}

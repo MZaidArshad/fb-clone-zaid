@@ -1,0 +1,9 @@
+.home__body {
+  display: flex;
+}
+
+@media screen and (max-width: 720px) {
+  .home__body {
+    justify-content: center;
+  }
+}
